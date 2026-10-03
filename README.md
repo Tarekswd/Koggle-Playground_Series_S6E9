@@ -76,12 +76,7 @@ Using a fixed 5-Fold Stratified LightGBM setup, features were measured sequentia
 ├── submissions/
 │   ├── submission_frontier_top_plus_3way_w8.csv    # Final Selected Submission (Private: 0.94560 / Public: 0.94677)
 │   ├── submission_frontier_top_plus_3way_w12.csv   # Final Selected Submission (Private: 0.94560 / Public: 0.94676)
-│   └── FINAL_RECOMMENDATION.md                     # Model tracking and validation recommendations
-├── research/
-│   ├── discoveries.md                              # Generator reverse-engineering & deterministic boundaries
-│   ├── feature_ladder_analysis.md                  # Systematic CV ablation measurements
-│   ├── OPTIMAL_MATHEMATICAL_FORMULATION.md         # Latent propensity score analysis
-│   └── experiment_log.csv                          # Experiment tracking log
+
 ├── src/
 │   ├── evaluate_3way_frontier_blend.py             # 3-Way rank/probit frontier blend generator
 │   ├── train_generator_ridge_prod.py               # Generator-aware Ridge model
