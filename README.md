@@ -85,6 +85,7 @@ Using a fixed 5-Fold Stratified LightGBM setup, features were measured sequentia
 │   ├── train_xgboost_5fold.py                      # 5-Fold Hist-XGBoost pipeline
 │   └── optimize_blend_and_postprocess.py           # Threshold postprocessing & boundary clamping
 ├── s6e9-feature-ladder-what-moves-cv.ipynb          # End-to-end interactive feature ladder notebook
+├── generator_aware_ridge_raw.py
 ├── requirements.txt                                # Python package requirements
 ├── .gitignore                                      # Data and artifact exclusion rules
 └── README.md                                       # Project documentation
