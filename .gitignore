@@ -1,0 +1,42 @@
+# Data files
+data/
+original_data/
+playground-series-s6e9/
+*.tar.gz
+*.joblib
+*.npy
+*.json
+fleet/
+fleet_freq/
+oof/
+test_preds/
+catboost_info/
+catboost_info/**
+036d086b-4154-4148-b6c5-89559ad6147f
+user_input_*.txt
+
+# Submission files: ignore all CSVs in submissions EXCEPT the two final selected files
+submissions/*.csv
+!submissions/submission_frontier_top_plus_3way_w8.csv
+!submissions/submission_frontier_top_plus_3way_w12.csv
+!submissions/FINAL_RECOMMENDATION.md
+
+# Large root CSVs (match root only)
+/*.csv
+!research/*.csv
+
+# Python cache and temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ipynb_checkpoints/
+
+# System and IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.agents/
+.gemini/

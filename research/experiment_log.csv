@@ -1,0 +1,15 @@
+experiment_id,model,features,cv_folds,seed,oof_auc,fold_std,training_time_s,submission_file,delta_vs_baseline,status
+EXP_000,Chris_Deotte_Formula,"inc, env, sub, med_anx, high_anx",None,None,0.937690,None,None,None,-0.008142,COMPLETED
+EXP_001,Logistic_Regression_All,"13 raw features (scaled/ohe)",None,None,0.938110,None,18.2,None,-0.007722,COMPLETED
+EXP_002,LightGBM_Buddy_Model,"75 features (Digit decomp, Dual TE, Freq)",5,42,0.945832,0.000632,None,submissions/submission_baseline_lgb.csv,0.000000,COMPLETED
+EXP_003,Deterministic_Postprocessing,"Cliff 170537, Floor <0.7026, Ceiling >7.035",5,42,0.945834,0.000632,None,submissions/submission_cliff_postprocessed.csv,+0.000002,COMPLETED
+EXP_004,LGBM_InitScore_BaseMargin,"23 features + Base Margin",1,42,0.942160,None,35.0,None,-0.000277,REJECTED
+EXP_005,XGBoost_5Fold_Hist,"29 features (formula, digits, ratios, flags)",5,42,0.943319,0.000725,287.1,None,-0.002513,COMPLETED
+EXP_006,Ensemble_LGB_XGB_Cliff,"0.90 LGB + 0.10 XGB + Deterministic Clamping",5,42,0.945871,0.000591,287.1,submissions/submission_best_ensemble_lgb_xgb.csv,+0.000039,COMPLETED
+EXP_007,XGBoost_Pseudo_Labeled,"Augmented with 6252 ultra-confident test samples",5,42,0.943660,0.000672,329.0,submissions/submission_target_0.952_pseudo_ensemble.csv,+0.000341,COMPLETED
+EXP_008,Grandmaster_Rank_Power_Gmean,"LGB 75fe + Pseudo-XGB + Formula Clamping",5,42,0.945872,0.000588,329.0,submissions/submission_target_0.952_pseudo_ensemble.csv,+0.000040,COMPLETED
+EXP_009,CatBoost_5Fold,"29 features (formula, digits, ratios, frequencies)",5,42,0.943439,0.000781,304.0,None,-0.002393,COMPLETED
+EXP_010,Grandmaster_3Way_Ensemble,"0.88 LGB + 0.07 XGB + 0.05 CB + Clamping",5,42,0.945875,0.000582,304.0,submissions/submission_3way_grandmaster_ensemble.csv,+0.000043,NEW_BEST_OOF
+EXP_011,Mega_4Way_Ensemble,"LGB + Pseudo-XGB + CatBoost + Base-XGB + Clamping",5,42,0.945878,0.000579,633.0,submissions/submission_mega_4way_grandmaster_ensemble.csv,+0.000046,COMPLETED
+EXP_012,Quantization_Ladder_LGB,"53 features (CTGAN rungs 100/500/1000/5000, smoothed TE)",5,42,0.944789,0.000681,218.3,None,-0.001043,COMPLETED
+EXP_013,Quantization_Pinnacle_Ensemble,"70% Base LGB + 25% Ladder LGB + 3% XGB + 2% CB + Clamping",5,42,0.946010,0.000567,218.3,submissions/submission_ultimate_quantization_pinnacle.csv,+0.000178,WORLD_CLASS_PINNACLE
